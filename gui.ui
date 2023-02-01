@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>gui</class>
+ <widget class="QDialog" name="gui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>413</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Курсовая работа Савкин, Умургулов 3-421Б</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>3</number>
+   </property>
+   <widget class="QWidget" name="TAB_PROJECTS">
+    <attribute name="title">
+     <string>Проекты</string>
+    </attribute>
+    <widget class="QTableWidget" name="TABLE_PROJECT_HEADER">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>800</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>39</number>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>155</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Проект</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Команда</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Задача проекта</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Платформа</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Метод связи</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="TAB_NEWS">
+    <attribute name="title">
+     <string>Новости</string>
+    </attribute>
+    <widget class="QTableWidget" name="TABLE_PROJECT_NEWS">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>800</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>155</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Номер проекта</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Проект</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Новость</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="BUTTON_PROJECTS_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>410</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить проект</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="BUTTON_PROJECT_NEWS">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>330</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить новость</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_project_news_commit">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>330</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>COMMIT!!!!!</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="TAB_EMPLOYEES">
+    <attribute name="title">
+     <string>Сотрудники</string>
+    </attribute>
+    <widget class="QTableWidget" name="TABLE_EMP">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>800</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>130</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Имя</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Фамилия</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Телефон</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Email</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Группа</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Статус</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="TAB_PROG_SET">
+    <attribute name="title">
+     <string>Утилиты</string>
+    </attribute>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>104</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="toolsLabel">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Номер бага:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="issueButton">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>20</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Скачать</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelTextCreate">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>100</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Текст бага</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>70</y>
+       <width>231</width>
+       <height>111</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="issueButtonCreate">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>90</y>
+       <width>75</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Завести баг</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>110</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Заголовок:</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_header_bug">
+     <property name="geometry">
+      <rect>
+       <x>63</x>
+       <y>70</y>
+       <width>171</width>
+       <height>111</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Название файла:</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>210</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonCommitDoc">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>212</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Загрузить док</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
