@@ -119,6 +119,15 @@ class Ui_gui(object):
         self.buttonCommitDoc = QPushButton(self.TAB_PROG_SET)
         self.buttonCommitDoc.setObjectName(u"buttonCommitDoc")
         self.buttonCommitDoc.setGeometry(QRect(220, 212, 91, 31))
+        self.label_3 = QLabel(self.TAB_PROG_SET)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(20, 290, 221, 41))
+        self.textBoxSha = QTextEdit(self.TAB_PROG_SET)
+        self.textBoxSha.setObjectName(u"textBoxSha")
+        self.textBoxSha.setGeometry(QRect(330, 300, 341, 31))
+        self.buttonGetVersion = QPushButton(self.TAB_PROG_SET)
+        self.buttonGetVersion.setObjectName(u"buttonGetVersion")
+        self.buttonGetVersion.setGeometry(QRect(680, 300, 75, 31))
         self.tabWidget.addTab(self.TAB_PROG_SET, "")
 
         self.retranslateUi(gui)
@@ -172,6 +181,8 @@ class Ui_gui(object):
         self.label.setText(QCoreApplication.translate("gui", u"\u0417\u0430\u0433\u043e\u043b\u043e\u0432\u043e\u043a:", None))
         self.label_2.setText(QCoreApplication.translate("gui", u"\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u0444\u0430\u0439\u043b\u0430:", None))
         self.buttonCommitDoc.setText(QCoreApplication.translate("gui", u"\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u0434\u043e\u043a", None))
+        self.label_3.setText(QCoreApplication.translate("gui", u"\u041f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u0435 \u0432\u0435\u0440\u0441\u0438\u0438 \u043f\u0440\u043e\u0435\u043a\u0442\u0430. \u0412\u0432\u0435\u0434\u0438\u0442\u0435 SHA: ", None))
+        self.buttonGetVersion.setText(QCoreApplication.translate("gui", u"\u041f\u043e\u043b\u0443\u0447\u0438\u0442\u044c!", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.TAB_PROG_SET), QCoreApplication.translate("gui", u"\u0423\u0442\u0438\u043b\u0438\u0442\u044b", None))
     # retranslateUi
 

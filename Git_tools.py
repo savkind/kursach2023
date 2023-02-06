@@ -1,11 +1,13 @@
 from github import Github
 from github import InputGitTreeElement
 import json
+import requests
+import zipfile
 
 class Git_tools():
 
     def __init__(self):    
-        self.access_token = "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"
+        self.access_token = "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"
         self.g = Github(self.access_token)
         self.user = self.g.get_user()
         self.repo = self.user.get_repo("kursach2023")
@@ -50,3 +52,10 @@ class Git_tools():
         parent = self.repo.get_git_commit(master_sha)
         commit = self.repo.create_git_commit(commit_message, tree, [parent])
         master_ref.edit(commit.sha)
+    
+    def get_version(self,sha):
+        ref = 'https://github.com/savkind/kursach2023/archive/{sha}.zip'
+        r = requests.get(ref, allow_redirects=True)
+        open("object.zip", "wb").write(r.content)
+        z = zipfile.ZipFile('object.zip', 'r')
+        path = z.filelist[0].filename.rpartition('/')[0]

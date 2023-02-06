@@ -337,6 +337,42 @@
       <string>Загрузить док</string>
      </property>
     </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>290</y>
+       <width>221</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Получение версии проекта. Введите SHA: </string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textBoxSha">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>300</y>
+       <width>341</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonGetVersion">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>300</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Получить!</string>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>

@@ -24,6 +24,7 @@ class MainWindow(QMainWindow):
         self.ui.issueButton.clicked.connect(self.get_bug)
         self.ui.issueButtonCreate.clicked.connect(self.create_bug)
         self.ui.buttonCommitDoc.clicked.connect(self.upload_doc)
+        self.ui.buttonGetVersion.clicked.connect(self.get_version)
 
 
     def _init_table_project_new(self):
@@ -121,6 +122,10 @@ class MainWindow(QMainWindow):
     def upload_doc(self):
         filename = self.ui.textEdit_3.toPlainText()
         self.git_con.upload_tech_doc(filename)
+
+    def get_version(self):
+        sha = self.ui.textBoxSha.toPlainText()
+        self.git_con.get_version(sha)
 
 
 
